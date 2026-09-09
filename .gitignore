@@ -4,3 +4,4 @@ videos/
 *.mp4
 __pycache__/
 videos.csv
+*.log
