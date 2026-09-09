@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 - Shorts Batch Uploader</title>
+<style>
+  body { margin: 0; font-family: "Malgun Gothic", "Apple SD Gothic Neo", -apple-system, sans-serif; color: #222; background: #fafafa; line-height: 1.7; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
+  h1 { font-size: 1.7em; margin-bottom: 4px; }
+  h1 small { font-weight: normal; color: #777; font-size: 0.6em; margin-left: 8px; }
+  h2 { font-size: 1.15em; margin-top: 32px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+  h2 small { font-weight: normal; color: #777; font-size: 0.8em; margin-left: 8px; }
+  .meta { color: #666; margin-top: 0; }
+  .note { background: #fff; border: 1px solid #e3e3e3; border-left: 4px solid #4a7ac7; padding: 12px 16px; border-radius: 4px; }
+  code { background: #eee; padding: 1px 5px; border-radius: 3px; font-size: 0.92em; }
+  ul { padding-left: 22px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #ddd; color: #666; font-size: 0.9em; }
+  a { color: #2a5db0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>개인정보처리방침 <small>Privacy Policy</small></h1>
+  <p class="meta">Shorts Batch Uploader | 운영자: 한종수 (개인) | 시행일: 2026-09-09 (Effective date: 2026-09-09)</p>
+
+  <h2>1. YouTube API Services 사용 <small>Use of YouTube API Services</small></h2>
+  <div class="note">
+    <strong>This application uses YouTube API Services.</strong><br>
+    Shorts Batch Uploader는 YouTube API Services(YouTube Data API v3)를 사용하여 운영자 본인의 채널에 영상을 업로드합니다.
+    이 도구를 사용하면 <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube 서비스 약관(YouTube Terms of Service)</a>에 동의하는 것으로 간주됩니다.
+  </div>
+
+  <h2>2. Google 개인정보처리방침 <small>Google Privacy Policy</small></h2>
+  <p>Google이 수집하고 처리하는 정보는 Google 개인정보처리방침의 적용을 받습니다.<br>
+  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+
+  <h2>3. 수집하고 저장하는 데이터 <small>Data collected and stored</small></h2>
+  <ul>
+    <li><strong>OAuth 토큰</strong>: Google 계정 인증 후 발급되는 액세스/리프레시 토큰은 <strong>운영자의 PC에만</strong> <code>token.json</code> 파일로 저장됩니다. 외부 서버로 전송되지 않습니다.</li>
+    <li><strong>제3자 제공 없음</strong>: 어떠한 데이터도 제3자에게 전송, 판매, 공유하지 않습니다.</li>
+    <li><strong>분석(Analytics) 없음</strong>: 사용 통계, 추적 도구, 광고 식별자를 사용하지 않습니다.</li>
+    <li><strong>시청자 데이터 없음</strong>: 시청자, 구독자, 댓글, 통계 등 타인의 데이터는 읽지도 저장하지도 않습니다.</li>
+    <li>요청하는 OAuth 범위는 <code>https://www.googleapis.com/auth/youtube.upload</code> 하나뿐입니다.</li>
+  </ul>
+
+  <h2>4. 접근 권한 철회 <small>How to revoke access</small></h2>
+  <ul>
+    <li>Google 보안 설정 페이지에서 언제든지 이 앱의 접근 권한을 철회할 수 있습니다:<br>
+      <a href="https://security.google.com/settings/security/permissions" target="_blank" rel="noopener">https://security.google.com/settings/security/permissions</a></li>
+    <li>운영자 PC의 <code>token.json</code> 파일을 삭제하면 저장된 인증 정보가 완전히 제거됩니다.</li>
+  </ul>
+
+  <h2>5. 데이터 보관 및 삭제 <small>Data retention and deletion</small></h2>
+  <ul>
+    <li>업로드한 영상의 메타데이터(제목, 설명, 태그, video ID)는 운영자 PC의 로컬 CSV 파일 외에는 이 도구가 별도로 보관하지 않습니다.</li>
+    <li>접근 권한을 철회하거나 <code>token.json</code>을 삭제하면 토큰은 즉시 삭제되며, 이 도구는 더 이상 Google 계정에 접근할 수 없습니다.</li>
+    <li>이 도구는 자체 서버나 데이터베이스를 운영하지 않으므로, 운영자 PC 밖에 남는 데이터는 없습니다.</li>
+  </ul>
+
+  <h2>6. 문의 <small>Contact</small></h2>
+  <p>운영자: 한종수 (개인)<br>
+  이메일: <a href="mailto:kingshan73@gmail.com">kingshan73@gmail.com</a></p>
+
+  <h2>7. 시행일 <small>Effective date</small></h2>
+  <p>이 개인정보처리방침은 <strong>2026-09-09</strong>부터 적용됩니다.</p>
+
+  <footer>
+    <p><a href="index.html">홈 (Home)</a> | <a href="terms.html">서비스 약관 (Terms of Service)</a></p>
+    <p>Shorts Batch Uploader | 운영자: 한종수 (개인) | This tool uses YouTube API Services.</p>
+  </footer>
+</main>
+</body>
+</html>

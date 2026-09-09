@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shorts Batch Uploader</title>
+<style>
+  body { margin: 0; font-family: "Malgun Gothic", "Apple SD Gothic Neo", -apple-system, sans-serif; color: #222; background: #fafafa; line-height: 1.7; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
+  h1 { font-size: 1.8em; margin-bottom: 4px; }
+  h2 { font-size: 1.2em; margin-top: 36px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+  h2 small { font-weight: normal; color: #777; font-size: 0.8em; margin-left: 8px; }
+  .lead { color: #555; margin-top: 0; }
+  .note { background: #fff; border: 1px solid #e3e3e3; border-left: 4px solid #4a7ac7; padding: 12px 16px; border-radius: 4px; }
+  code { background: #eee; padding: 1px 5px; border-radius: 3px; font-size: 0.92em; }
+  ul { padding-left: 22px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #ddd; color: #666; font-size: 0.9em; }
+  a { color: #2a5db0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Shorts Batch Uploader</h1>
+  <p class="lead">개인 개발자가 자신의 채널에 세로형 짧은 영상을 일괄 업로드하기 위해 만든 명령줄 도구입니다.</p>
+
+  <h2>이 도구는 무엇인가요? <small>What this tool is</small></h2>
+  <p>Shorts Batch Uploader는 운영자의 PC에 있는 로컬 폴더에서 세로형 짧은 영상(mp4)을 읽어,
+  YouTube Data API v3를 통해 <strong>운영자 본인의 YouTube 채널</strong>에 업로드하는 개인용 명령줄(CLI) 도구입니다.</p>
+  <ul>
+    <li>영상 파일은 로컬 폴더에서 읽습니다.</li>
+    <li>제목, 설명, 태그는 CSV 파일에서 읽습니다.</li>
+    <li>필요하면 예약 공개 시각(publishAt)을 지정할 수 있습니다.</li>
+    <li>그래픽 화면 없이 터미널에서만 실행됩니다.</li>
+  </ul>
+
+  <h2>누가 사용하나요? <small>Who can use it</small></h2>
+  <div class="note">
+    이 도구는 <strong>운영자 본인만</strong> 사용합니다. 배포하지 않으며, 일반에 공개된 서비스가 아닙니다.
+    타인의 계정이나 채널에 접근하지 않습니다.
+  </div>
+
+  <h2>접근하는 Google 사용자 데이터 <small>Google user data accessed</small></h2>
+  <p>이 도구가 요청하는 OAuth 범위(scope)는 다음 하나뿐입니다.</p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/youtube.upload</code> - 운영자 채널에 영상을 업로드하는 권한</li>
+  </ul>
+  <p>다음 데이터는 <strong>읽지도, 저장하지도 않습니다</strong>.</p>
+  <ul>
+    <li>시청자 데이터(구독자, 시청자 정보 등)</li>
+    <li>댓글</li>
+    <li>분석(Analytics) 데이터</li>
+  </ul>
+
+  <h2>YouTube API Services 사용 고지 <small>Use of YouTube API Services</small></h2>
+  <p><strong>This tool uses YouTube API Services.</strong><br>
+  이 도구는 YouTube API Services를 사용합니다. 사용자는
+  <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube 서비스 약관(YouTube Terms of Service)</a>과
+  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침(Google Privacy Policy)</a>의 적용을 받습니다.</p>
+
+  <h2>운영자, 문의 <small>Operator, Contact</small></h2>
+  <p>운영자: 한종수 (개인)<br>
+  이메일: <a href="mailto:kingshan73@gmail.com">kingshan73@gmail.com</a></p>
+
+  <footer>
+    <p><a href="privacy.html">개인정보처리방침 (Privacy Policy)</a> | <a href="terms.html">서비스 약관 (Terms of Service)</a></p>
+    <p>Shorts Batch Uploader | 운영자: 한종수 (개인) | This tool uses YouTube API Services.</p>
+  </footer>
+</main>
+</body>
+</html>
