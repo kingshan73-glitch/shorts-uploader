@@ -1,8 +1,9 @@
 client_secret*.json
-token.json
+token*.json
 videos/
 *.mp4
 __pycache__/
 videos.csv
+videos_*.csv
 *.log
 audit/

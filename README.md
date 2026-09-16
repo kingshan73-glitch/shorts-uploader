@@ -32,6 +32,21 @@ python upload_shorts.py --privacy unlisted --limit 3
 
 옵션: `--csv`, `--dir`, `--privacy private|unlisted|public`, `--client-secret`, `--token`, `--limit N`, `--dry-run`
 
+## 예약 시각 관리 (`manage_schedule.py`)
+
+업로드 뒤 예약 공개 시각을 **조회하거나 일괄 변경**한다. 업로더와 스코프가 달라
+(`youtube`) 토큰을 `token_manage.json` 에 따로 둔다. `token.json` 은 건드리지 않는다.
+
+```
+python manage_schedule.py --list                    # 예약 목록과 현재 쓰이는 시각
+python manage_schedule.py --set-time 18:00          # 미리보기
+python manage_schedule.py --set-time 18:00 --apply  # 실제 변경
+```
+
+- `--set-time` 은 **시:분만** 바꾼다. 각 영상의 예약 날짜는 그대로 둔다.
+- 첫 실행 때 인증 URL 이 콘솔에 찍힌다. 브라우저를 자동으로 열지 않는 이유는,
+  자동으로 열면 스크립트를 띄운 쪽에서 제어할 수 없는 창이 떠 인증이 멈춘 채로 대기하기 때문이다.
+
 ## 주의
 
 - Google Cloud 프로젝트가 **YouTube API 감사(compliance audit)를 통과하기 전**에는 이 API 로 올린 영상이
