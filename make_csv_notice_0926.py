@@ -3,7 +3,7 @@ import os
 import shutil
 import sys
 
-SRC = r"D:\Claude_code_project\digital_content\outputs\홈페이지점검_쇼츠_20260923\홈페이지점검안내_0926_16s_1080x1920-02_첫프레임보강.mp4"
+SRC = r"D:\Claude\hnedu\digital-content\outputs\홈페이지점검_쇼츠_20260923\홈페이지점검안내_0926_16s_1080x1920-02_첫프레임보강.mp4"
 FILE = "홈페이지점검안내_0926.mp4"
 # 업로드 기록(status·video_id)을 덮어써 중복 업로드되는 것을 막는다
 if os.path.exists("videos_notice_0926.csv"):
